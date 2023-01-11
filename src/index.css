@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --white: #ffffff;
+  --white1: #f1f1f1;
+  --white-gray9: #f9f9f9;
+  --white-gray3: #f3f3f3;
+  --grayD: #dadada;
+  --gray: #9a9a9a;
+  --gray87: #878787;
+  --black5: #555555;
+  --green1b: #1bbc9b;
+  --blue: #14b9d5;
+  --violet: #ba71da;
+  --red: #f76570;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

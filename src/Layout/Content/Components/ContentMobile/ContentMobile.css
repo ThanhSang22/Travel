@@ -1,0 +1,21 @@
+.content-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 12px;
+}
+
+@media (min-width: 768px) {
+    .content-mobile {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content-mobile {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}

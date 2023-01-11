@@ -1,0 +1,70 @@
+.content-holiday {
+    background: url(../../../../assets/image/sanfrancisco.png) center;
+    margin-top: 72px;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.holiday-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-direction: column;
+}
+
+.holiday-text {
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+}
+
+.holiday-text__frist {
+    font-size: 45px;
+}
+
+.holiday-text__frist::after {
+    text-transform: uppercase;
+}
+
+.holiday-text__second {
+    font-size: 50px;
+    line-height: 60px;
+    display: flex;
+}
+
+.holiday {
+    text-decoration: underline var(--red);
+}
+
+.holiday::after {
+    text-transform: uppercase;
+}
+
+.holiday-btn {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    color: var(--red);
+    background-color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .holiday-box {
+        flex-direction: row;
+    }
+    .holiday-text {
+        margin-right: 20%;
+    }
+    .holiday-text__second {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* @media (min-width: 1240px) {
+    
+} */
