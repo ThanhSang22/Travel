@@ -1,0 +1,153 @@
+.footer {
+    background-image: url(../../assets/image/footer.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__info {
+    padding: 0 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__info--heading {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__info--heading-text{
+    flex-direction: column;
+    padding: 0 12px;
+    text-align: center;
+}
+
+.info--heading {
+    text-transform: none;
+}
+
+.info--heading::first-letter {
+    text-transform: uppercase !important;
+}
+
+.footer__info--send {
+    display: flex;
+    padding: 0 12px;
+}
+
+.info--send-input {
+    border-radius: 30px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+}
+
+.info--send-btn {
+    padding: 5 20px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.footer__info-text__backgroud {
+    padding: 35px 30px;
+    background-color: var(--white);
+    margin: 0 auto;
+}
+
+.footer__info-text {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-text {
+    flex-basis: 50%;
+}
+
+.info-text__desc {
+    flex-grow: 1;
+}
+
+.info-text__icon {
+    display: flex;
+    margin-top: 20px;
+}
+
+.info-text__icon-view {
+    display: block;
+    color: var(--black5);
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.info-text__options-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-text__options {
+}
+
+.text__options-heading {
+    font-size: 14px;
+    color: var(--black5);
+    text-transform: uppercase;
+}
+
+.text__options {
+    color: var(--gray);
+    text-transform: capitalize;
+}
+
+.options--footer {
+
+}
+
+.options--footer::first-letter {
+    text-transform: uppercase;
+}
+
+.footer__note  {
+    background-color: var(--blue);
+}
+
+.footer__note-text {
+    padding: 20px 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.note-text {
+    color: var(--white);
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .footer__info--heading{
+        flex-direction: row;
+    }
+    .info-text__options-box {
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 50%;
+    }
+    .footer__info-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer__info {
+        
+    }
+}

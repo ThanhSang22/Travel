@@ -10,10 +10,10 @@ const ContentHoliday = () => {
                 <div className='holiday-text'>
                     <h1 className='holiday-text__frist'> Your</h1>
                     <h6 className='holiday-text__second'>Next
-                    <TextDecoration name={'Holiday'} className='holiday'/>
+                    <TextDecoration name='Holiday' className='holiday'/>
                     </h6>
                 </div>
-                <Button name={'view all packages'} className='holiday-btn'/>
+                <Button name='view all packages' className='holiday-btn'/>
             </div>
         </div>
     )

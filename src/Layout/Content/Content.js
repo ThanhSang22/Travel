@@ -7,30 +7,9 @@ import Button from '../../Components/Button/Button';
 import world from '../../assets/image/world.png';
 import Cruises from '../../assets/image/Cruises.png';
 import landmark from '../../assets/image/landmark.png';
-import berlin from '../../assets/image/berlin.png';
-import arch from '../../assets/image/arch.png';
-import {FaMapMarkerAlt} from 'react-icons/fa'
 import ContentPro from './Components/ContentPro/ContentPro';
-
-
-const cleanders = [
-    {
-        number: 0,
-        text: 'Days'
-    },
-    {
-        number: 0,
-        text: 'hours'
-    },
-    {
-        number: 0,
-        text: 'minutes'
-    },
-    {
-        number: 0,
-        text: 'seconds'
-    }
-]
+import {cleanders} from '../../ultil/const';
+import { datapakages } from '../../ultil/const';
 
 const Content = () => {
     return (
@@ -38,7 +17,7 @@ const Content = () => {
             <b className='content-heading__text'>our proposals</b>
             <h1 className='content-heading'>
                 our 
-                <TextDecoration className='content-heading-line' name={'destinations'}/>
+                <TextDecoration className='content-heading-line' name='destinations'/>
             </h1>
             <div className='content-mobile'>
                 <ContentMobile/>
@@ -49,7 +28,7 @@ const Content = () => {
                     <div className='container-box-text' >
                         <p className='content-heading__text'>north america</p>
                         <h1 className='content-heading'>the Best 
-                            <TextDecoration name={'Beaches'} className='holiday__text'/>
+                            <TextDecoration name='Beaches' className='holiday__text'/>
                         </h1>
                         <p className='content-text'>Lorem ipsum dolor sit amet, consectetur adip iscing elit. 
                         Proin rhoncus urna dictum neque molestie ultricies mauris ac.</p>
@@ -113,7 +92,7 @@ const Content = () => {
                     </a>
                 </div>
                 <div className='content__discover-item1'>
-                    <p className='discover-item__number'>01. last minutes</p>
+                    <p className='discover-item__number'>02. last minutes</p>
                     <div className='discover-item__name'>Descover Cities</div>
                     <a href='#' className='discover-item__view'>
                         <Button name={'deteails'} className='discover-item__btn'/>
@@ -125,37 +104,15 @@ const Content = () => {
                 <h1 className='content-heading'>our 
                     <TextDecoration name='packages' className='content__pro-text'/>
                 </h1>
-                {/* <div className='content__packages'>
-                    <div className='content__packages-item'>
-                        <div className='packages-item'>
-                            <img src={berlin} classname='packages-item__img'/>
-                            <div className='packages-item__icon berlin-color'>
-                                <img src={arch}  className='packages__icon'/>
+                <div className='content__pro-backage'>
+                    {datapakages && datapakages.map((pakage, key) => {
+                        return (
+                            <div className='pro-backage'>
+                                <ContentPro key={key} datapakage={pakage} />
                             </div>
-                        </div>
-                        <div className='packages-item__info'>
-                            <h1 className='packages-item__place'>berlin</h1>
-                            <p className='packages-item__map'> <FaMapMarkerAlt/> Europe</p>
-                            <hr/>
-                            <div className='packages-item__price'>
-                                <div className='price--text'>
-                                    <h6 className='item__price--text'> curtural</h6>
-                                    <h6 className='item__price--text'>
-                                        relax
-                                        <Button name='+1' className='item__price-btn berlin-color'/>
-                                    </h6>
-                                </div>
-                                <span className='item__price' >700 $</span>
-                            </div>
-                            <hr/>
-                            <p className='packages-item__desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
-                            <a href='#' className='packages-item__view'>
-                                <Button name='details' className='packages-item__btn berlin-color'/>
-                            </a>
-                        </div>
-                    </div>
-                </div> */}
-                <ContentPro/>
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )

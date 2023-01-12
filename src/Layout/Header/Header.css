@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 80px;
+    position: relative;
 }
 
 .header-logo {
@@ -32,6 +33,7 @@
 .header-menu-btn {
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 .header-menu-content {
@@ -63,7 +65,12 @@
 }
 
 .decoration-text {
+    display: inline-block;
     padding-left: 15px;
+}
+
+.decoration-text::first-letter {
+    text-transform: uppercase;
 }
 
 .headeing__text {

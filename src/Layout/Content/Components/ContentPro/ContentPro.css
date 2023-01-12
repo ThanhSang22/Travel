@@ -20,7 +20,7 @@
 }
 
 .berlin-color {
-    background-image: linear-gradient(to right, rgb(255, 210, 5) 0%, rgb(255, 155, 5) 100%);
+    background-image: var(--background-yellow);
 }
 
 .packages-item__img {
