@@ -2,11 +2,9 @@ import React from 'react';
 import './HeaderMenu.css';
 import {IoCloseCircleOutline} from 'react-icons/io5';
 import TextDecoration from '../../../../Components/TextDecoration/TextDecoration';
-import {placeMenus} from '../../../../ultil/const'
+import {menutes, placeMenus} from '../../../../ultil/const'
 import Place from '../../../../Components/Place/Place';
-import Button from '../../../../Components/Button/Button';
-import {FaMapMarkerAlt} from 'react-icons/fa';
-import berlin from '../../../../assets/image/berlin.png'
+import ContentMobileItem from '../../../Content/Components/ContentMobileItem/ContentMobileItem';
 
 const HeaderMenu = ({open, onClose}) => {
     if(!open) return <></>
@@ -24,22 +22,31 @@ const HeaderMenu = ({open, onClose}) => {
           </b>
         </div>
         <div className='header-menu__place'>
-          {/* {placeMenus && placeMenus.map((placeMenu, key) => {
+          {placeMenus && placeMenus.map((placeMenu, p) => {
             return (
-              <Place key={key}
-              image={placeMenu.image} 
-              name={placeMenu.name}
-              location={placeMenu.location}
+              <Place key={p}
+              img={placeMenu.img} 
+              place={placeMenu.place}
+              locat={placeMenu.locat}
+              btn={placeMenu.btn}
               />
             )
-          })} */}
-          <img src={berlin} className='place-img'/>
-            <div className='place-content'>
-                <div className='place-content__address'>berlin</div>
-                <div className='place-content__map'><FaMapMarkerAlt/> europe</div>
-                <Button name='FROM 700 $' className='palce-content__btn'/>
-            </div>
+          })}
         </div>  
+        <ContentMobileItem className='menu-item'/>
+        <div className='header-menu__place'>
+          {menutes && menutes.map((menute, m) => {
+            return (
+              <Place key={m}
+              img={menute.imgm} 
+              place={menute.placem}
+              locat={menute.locatm}
+              btn={menute.btnm}
+              />
+            )
+          })}
+        </div>
+
       </div>
     </div>
   )

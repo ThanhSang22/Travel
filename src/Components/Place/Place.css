@@ -21,13 +21,19 @@
     margin: 5px 0 0;
 }
 
+.place-content__address::first-letter {
+    text-transform: uppercase;
+}
+
 .place-content__map {
     color: var(--gray);
     font-size: 15px;
     margin: 10px 0;
+    text-transform: capitalize;
 }
 
 .palce-content__btn {
     background: var(--background-yellow);
     padding: 5px 20px;
+    font-size: 14px;
 }

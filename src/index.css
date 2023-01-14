@@ -21,8 +21,11 @@ p {
   --violet: #ba71da;
   --red: #f76570;
   --background-yellow: linear-gradient(to right, rgb(255, 210, 5) 0%, rgb(255, 155, 5) 100%);
-  --background-red: linear-gradient(to right, #f76570 0%, #f78d65 100%);
-  --background-violet: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+  --background-red: linear-gradient(to right, var(--red) 0%, #f78d65 100%);
+  --background-violet: linear-gradient(to right, var(--violet) 0%, #da717b 100%);
+  --background-green: linear-gradient(to right, var(--green1b) 0%, #1bbc63 100%);
+  --background-orange : linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+
 }
 
 body {

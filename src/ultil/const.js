@@ -16,46 +16,55 @@ import relax from '../assets/image/t-relax.png';
 import cultural from '../assets/image/t-cultural.png';
 import sport from '../assets/image/t-sport.png';
 import history from '../assets/image/t-history.png';
-import ContentMobileItem1 from '../Layout/Content/Components/ContentMobileItem/ContentMobileItem1';
+import tuscany from '../assets/image/tuscany.png';
+import amsterdam from '../assets/image/amsterdam.png';
+import phuket from '../assets/image/phuket.png';
 
-export const placeMenus = [
+
+// header menu
+export const menutes = [
     {
-        image: berlin,
-        name: 'berlin',
-        location: 'europe',
+        imgm: tuscany,
+        placem: 'tuscay',
+        locatm: 'italy',
+        btnm: 'from 730 $'
     },
     {
-        image: hongkong,
-        name: 'hong kong',
-        location: 'asia',
+        imgm: amsterdam,
+        placem: 'amsterdam',
+        locatm: 'netherlands',
+        btnm: 'from 1500 $'
     },
     {
-        image: sanfrancisco,
-        name: 'sanfrancisco',
-        location: 'united...',
-    },
-    {
-        image: null,
-        name: <ContentMobileItem1/>,
-        location: null,
-    },
-    {
-        image: berlin,
-        name: 'berlin',
-        location: 'europe',
-    },
-    {
-        image: berlin,
-        name: 'berlin',
-        location: 'europe',
-    },
-    {
-        image: berlin,
-        name: 'berlin',
-        location: 'europe',
+        imgm: phuket,
+        placem: 'phuket',
+        locatm: 'thailandia',
+        btnm: 'from 1200 $'
     }
 ]
 
+export const placeMenus = [
+    {
+        img: berlin,
+        place: 'berlin',
+        locat: 'europe',
+        btn: 'FROM 700 $'
+    },
+    {
+        img: hongkong,
+        place: 'hong kong',
+        locat: 'asia',
+        btn: 'FROM 700 $'
+    },
+    {
+        img: sanfrancisco,
+        place: 'sanfrancisco',
+        locat: 'united States',
+        btn: 'FROM 700 $'
+    }
+]
+
+//content
 export const cleanders = [
     {
         number: 0,
@@ -75,6 +84,7 @@ export const cleanders = [
     }
 ]
 
+//header slidebar
 export const headerServices = [
     {
         icon: relax,
@@ -94,6 +104,7 @@ export const headerServices = [
     },
 ]
 
+//content PROMOTIONS
 export const datapakages = [
     {
         image: berlin, 
@@ -121,6 +132,7 @@ export const datapakages = [
     }
 ]
 
+//content mobile
 const dataContentMobiles = [
     {
         image: europe,
