@@ -30,6 +30,13 @@
     align-items: center;
 }
 
+.header-contract {
+    display: flex;
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--white);
+}
+
 .header-menu-btn {
     width: 25px;
     height: 25px;
@@ -37,7 +44,7 @@
 }
 
 .header-menu-content {
-    
+    transform: translateX(50%);
 }
 
 .slider {

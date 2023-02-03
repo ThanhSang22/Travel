@@ -2,7 +2,6 @@
     width: 330px;
     height: 100%;
     background-color: var(--white);
-    position: absolute;
     top: 0;
     right: 0;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
@@ -11,7 +10,27 @@
     position: fixed;
     z-index: 1;
     padding: 20px;
+    animation: slideInLeft linear .3s;
 }
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(100%);
+    }
+}
+
+/* .header-menu__slide {
+    animation: slideInRight linear .2s !important;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+} */
 
 .header-menu::-webkit-scrollbar {
     display: none;
@@ -61,5 +80,5 @@
 
 .menu-item {
     display: block;
-    width: calc(100%/2) !important;
+    width: 100% !important;
 }

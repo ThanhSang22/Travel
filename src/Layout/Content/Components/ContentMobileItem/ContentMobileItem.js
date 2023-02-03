@@ -5,7 +5,7 @@ import arch from '../../../../assets/image/arch.png';
 import Button from '../../../../Components/Button/Button';
 
 
-const ContentMobileItem = ( className) => {
+const ContentMobileItem = ({className}) => {
     return (
         <div className='content-monile-item'>
             <div class="item__photo">

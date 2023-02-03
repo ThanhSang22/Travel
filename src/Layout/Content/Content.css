@@ -51,6 +51,9 @@
 .content-text {
     color: var(--gray);
     margin: 14px 0;
+    letter-spacing: 1px;
+    line-height: 27px;
+    font-size: 14px;
 }
 
 .container__price {
@@ -159,12 +162,6 @@
 
 .tour__heading::after{
     text-transform: uppercase;
-}
-
-.tour__text {
-    font-size: 14px;
-    color: var(--gray);
-    margin: 14px 0;
 }
 
 .content__view--link {

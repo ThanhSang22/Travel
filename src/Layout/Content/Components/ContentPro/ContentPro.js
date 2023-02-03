@@ -29,7 +29,7 @@ const ContentPro = ({datapakage}) => {
                             <span className='item__price' >{datapakage.price}</span>
                         </div>
                         <hr/>
-                        <p className='packages-item__desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <p className='packages-item__desc content-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
                         <a href='#' className='packages-item__view'>
                             <Button name='details' className='packages-item__btn berlin-color'/>
                         </a>

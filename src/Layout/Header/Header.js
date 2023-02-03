@@ -1,12 +1,16 @@
 import React, {useState} from 'react';
+import {Routes, Route, Link} from 'react-router-dom';
+import {FaSearch} from 'react-icons/fa';
+import {headerServices} from '../../ultil/const';
+import {IoMdContact} from "react-icons/io";
 import logo from '../../assets/image/logo.png';
 import './Header.css';
 import HeaderNavbar from './Components/HeaderNavbar/HeaderNavbar';
 import menu from '../../assets/image/menu.png';
 import HeaderMenu from './Components/HeaderMenu/HeaderMenu';
 import TextDecoration from '../../Components/TextDecoration/TextDecoration';
-import {FaSearch} from 'react-icons/fa';
-import {headerServices} from '../../ultil/const'
+import Login from '../../Pages/Login/Login';
+import Register from '../../Pages/Register/Register';
 
 const Header = () => {
     const  [openModal, setOpenModal] = useState(false);
@@ -17,8 +21,15 @@ const Header = () => {
                 <img src={logo} className="header-logo"/>
                 <div className='header-navbar-menu'>
                     <HeaderNavbar />
+                    <Link to='/login'>
+                        <IoMdContact className='header-contract'/>
+                    </Link>
                     <img src={menu} className='header-menu-btn' onClick={()=> setOpenModal(true)}/>
                 </div>
+                <Routes>
+                    <Route path='/login' element={<Login/>}/>
+                    <Route path='/register' element={<Register/>}/>             
+                </Routes>
             </div>
             {/* <HeaderMenu className="header-menu-content"/> */}
             <div className='slider'>

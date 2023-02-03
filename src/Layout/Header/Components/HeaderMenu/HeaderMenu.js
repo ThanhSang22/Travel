@@ -10,7 +10,7 @@ const HeaderMenu = ({open, onClose}) => {
     if(!open) return <></>
     
   return (
-    <div className='header-menu'>
+    <div className='header-menu header-menu__slide'>
       <div className='header-menu__close'>
         <IoCloseCircleOutline className='header-menu__close-icon' onClick={onClose} />
       </div>
@@ -46,7 +46,6 @@ const HeaderMenu = ({open, onClose}) => {
             )
           })}
         </div>
-
       </div>
     </div>
   )

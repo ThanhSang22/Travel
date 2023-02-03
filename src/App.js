@@ -1,15 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './Layout/Header/Header';
-import Content from './Layout/Content/Content';
-import Footer from './Layout/Footer/Footer';
+import logo from "./logo.svg";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Login from "./Pages/Login/Login";
+import Register from "./Pages/Register/Register";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
     <>
-    <Header/>
-    <Content/>
-    <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
+      </Routes>
     </>
   );
 }

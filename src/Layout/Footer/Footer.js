@@ -24,7 +24,7 @@ const Footer = () => {
                 <div className='footer__info-text__backgroud'>
                     <div className='footer__info-text'>
                         <div className='info-text'>
-                            <p className='info-text__desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            <p className='content-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Curabitur ut diam et nibh <u>condimentum</u> venenatis eu ac magnasin. 
                                 Quisque interdum est mauris, eget ullamcorper.
                             </p>
@@ -39,31 +39,31 @@ const Footer = () => {
                             <div className='info-text__options'>
                                 <h6 className='text__options-heading'>our agency</h6>
                                 <ul className='text__options'>
-                                    <li className='options--footer'> <GrFormNext/> Services</li>
-                                    <li className='options--footer'><GrFormNext/> insurancee</li>
-                                    <li className='options--footer'><GrFormNext/> agency</li>
-                                    <li className='options--footer'><GrFormNext/> tourism</li>
-                                    <li className='options--footer'><GrFormNext/> tourism</li>
+                                    <li className='options--footer content-text'> <GrFormNext/> Services</li>
+                                    <li className='options--footer content-text'><GrFormNext/> insurancee</li>
+                                    <li className='options--footer content-text'><GrFormNext/> agency</li>
+                                    <li className='options--footer content-text'><GrFormNext/> tourism</li>
+                                    <li className='options--footer content-text'><GrFormNext/> Payment</li>
                                 </ul>
                             </div>
                             <div className='info-text__options'>
                                 <h6 className='text__options-heading'>our agency</h6>
                                 <ul className='text__options'>
-                                    <li className='options--footer'> <GrFormNext/> Services</li>
-                                    <li className='options--footer'><GrFormNext/> insurancee</li>
-                                    <li className='options--footer'><GrFormNext/> agency</li>
-                                    <li className='options--footer'><GrFormNext/> tourism</li>
-                                    <li className='options--footer'><GrFormNext/> tourism</li>
+                                    <li className='options--footer content-text'> <GrFormNext/> Services</li>
+                                    <li className='options--footer content-text'><GrFormNext/> insurancee</li>
+                                    <li className='options--footer content-text'><GrFormNext/> agency</li>
+                                    <li className='options--footer content-text'><GrFormNext/> tourism</li>
+                                    <li className='options--footer content-text'><GrFormNext/> Payment</li>
                                 </ul>
                             </div>
                             <div className='info-text__options'>
                                 <h6 className='text__options-heading'>our agency</h6>
                                 <ul className='text__options'>
-                                    <li className='options--footer'> <GrFormNext/> Services</li>
-                                    <li className='options--footer'><GrFormNext/> insurancee</li>
-                                    <li className='options--footer'><GrFormNext/> agency</li>
-                                    <li className='options--footer'><GrFormNext/> tourism</li>
-                                    <li className='options--footer'><GrFormNext/> tourism</li>
+                                    <li className='options--footer content-text'> <GrFormNext/> Services</li>
+                                    <li className='options--footer content-text'><GrFormNext/> insurancee</li>
+                                    <li className='options--footer content-text'><GrFormNext/> agency</li>
+                                    <li className='options--footer content-text'><GrFormNext/> tourism</li>
+                                    <li className='options--footer content-text'><GrFormNext/> Payment</li>
                                 </ul>
                             </div>
                         </div>

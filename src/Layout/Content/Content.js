@@ -62,7 +62,7 @@ const Content = () => {
                     <img src={world} className='tour__img'></img>
                     <div className='tour__info'>
                         <div className='tour__heading'>World Tour</div>
-                        <div className='tour__text'>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</div>
+                        <div className='content-text'>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</div>
                         <a href='#' className='content__view--link'>View More</a>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const Content = () => {
                     <img src={Cruises} className='tour__img'></img>
                     <div className='tour__info'>
                         <div className='tour__heading'>Cruises</div>
-                        <div className='tour__text'>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</div>
+                        <div className='content-text'>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</div>
                         <a href='#' className='content__view--link'>View More</a>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const Content = () => {
                     <img src={landmark} className='tour__img'></img>
                     <div className='tour__info'>
                         <div className='tour__heading'>Best Tours</div>
-                        <div className='tour__text'>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</div>
+                        <div className='content-text'>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</div>
                         <a href='#' className='content__view--link'>View More</a>
                     </div>
                 </div>
