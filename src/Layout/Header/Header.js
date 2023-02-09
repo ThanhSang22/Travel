@@ -57,7 +57,7 @@ const Header = () => {
                     })}
                 </div>
             </div>
-            <HeaderMenu className="header-menu-content" open={openModal} onClose={()=>setOpenModal(false)}/>
+            <HeaderMenu className="header-menu-content" open={openModal} setOpenModal={setOpenModal}/>
         </div>
     )
 }

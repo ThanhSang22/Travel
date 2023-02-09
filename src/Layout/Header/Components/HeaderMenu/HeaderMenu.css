@@ -10,16 +10,23 @@
     position: fixed;
     z-index: 1;
     padding: 20px;
+    transform: translateX(100%);
+}
+.openMenu {
     animation: slideInLeft linear .3s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes slideInLeft {
     from {
         transform: translateX(100%);
     }
+    to {
+        transform: translateX(0);
+    }
 }
 
-/* .header-menu__slide {
+.header-menu__slide {
     animation: slideInRight linear .2s !important;
 }
 
@@ -30,7 +37,7 @@
     to {
         transform: translateX(100%);
     }
-} */
+}
 
 .header-menu::-webkit-scrollbar {
     display: none;

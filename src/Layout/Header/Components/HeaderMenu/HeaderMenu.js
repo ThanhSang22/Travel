@@ -6,13 +6,12 @@ import {menutes, placeMenus} from '../../../../ultil/const'
 import Place from '../../../../Components/Place/Place';
 import ContentMobileItem from '../../../Content/Components/ContentMobileItem/ContentMobileItem';
 
-const HeaderMenu = ({open, onClose}) => {
-    if(!open) return <></>
+const HeaderMenu = ({open, setOpenModal}) => {
     
   return (
-    <div className='header-menu header-menu__slide'>
+  <div className={`header-menu ${!open ? 'header-menu__slide' : 'openMenu'}`}>
       <div className='header-menu__close'>
-        <IoCloseCircleOutline className='header-menu__close-icon' onClick={onClose} />
+        <IoCloseCircleOutline className='header-menu__close-icon' onClick={()=> setOpenModal(false)} />
       </div>
       <div className='header-menu__grid'>
         <div className='header-menu__text'> 

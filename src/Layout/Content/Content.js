@@ -105,10 +105,10 @@ const Content = () => {
                     <TextDecoration name='packages' className='content__pro-text'/>
                 </h1>
                 <div className='content__pro-backage'>
-                    {datapakages && datapakages.map((pakage, key) => {
+                    {datapakages && datapakages.map((pakage, p) => {
                         return (
                             <div className='pro-backage'>
-                                <ContentPro key={key} datapakage={pakage} />
+                                <ContentPro key={p} datapakage={pakage} />
                             </div>
                         )
                     })}

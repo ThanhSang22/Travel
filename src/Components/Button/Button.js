@@ -1,12 +1,12 @@
 import React from 'react';
 import './Button.css';
 
-const Button = ({name, icon, className}) => {
+const Button = ({name, icon, className, type}) => {
   return (
-    <div className={`button ${className}`}>
+    <button type={type || 'button'} className={`button ${className}`}>
       <span className='button-icon'>{icon}</span>
       <div className='button-name'>{name}</div>
-    </div>
+    </button>
   )
 }
 
